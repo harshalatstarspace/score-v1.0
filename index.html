@@ -1,0 +1,88 @@
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    <div class="scoreALLHTML">
+        <div class="scoreContainer">
+            <div>
+                <h3 class="homeScoreTitleHMTL">HOME SCORE</h3>
+                <h2 id="homeScoreNumHTMl" class="homeScoreNumHTMl">0</h2>
+            </div>
+            <div>
+                <h3>GUEST SCORE</h3>
+                <h2 id="guestScoreNumHTMl" class="guestScoreNumHTMl">0</h2>
+            </div>
+        </div>
+        <div class="scoreModButtonsALLHTML">
+            <div class="hScoreModBtnsALLHTML">
+                <h3 class="hScoreModTitleHTML">MOD HOME</h3>
+                <button id="hScoreModPlus1" onclick="hScoreModPlus1Func()">+1</button>
+                <button id="hScoreModPlus2" onclick="hScoreModPlus2Func()">+2</button>
+                <button id="hScoreModPlus3" onclick="hScoreModPlus3Func()">+3</button>
+                <button id="hScoreModMinus1" onclick="hScoreModMinus1Func()">-1</button>
+            </div>
+            <div class="gScoreModButtonsALLHTML">
+                <h3 class="gScoreModTitleHTML"> MOD GUEST</h3>
+                <button id="gScoreModPlus1" onclick="gScoreModPlus1Func()">+1</button>
+                <button id="gScoreModPlus2" onclick="gScoreModPlus2Func()">+2</button>
+                <button id="gScoreModPlus3" onclick="gScoreModPlus3Func()">+3</button>
+                <button id="gScoreModMinus1" onclick="gScoreModMinus1Func()">-1</button>
+            </div>
+        </div>
+        </div>
+        <div id="foulsALLHTML" class="foulsALLHTML">
+            <div class="foulsTitleHTML">
+                <h3>FOULS</h3>
+            </div>
+            <div class="homePlusGuestFoulsALLHTML">
+                <div class="homeFoulsALLHTML">
+                    <h3>HOME</h3>
+                    <h2 id="homeFoulNumHTMl" class="foulALLCONTENTHTML">0</h2>
+                    <h2 id="homeFoulPlayerNumHTMl" class="foulALLCONTENTHTML"># </h2>
+                </div>
+                <div class="guestFoulsALLHTML">
+                    <h3>GUEST</h3>
+                    <h2 id="guestFoulNumHTMl" class="foulALLCONTENTHTML">0</h2>
+                    <h2 id="guestFoulPlayerNumHTMl" class="foulALLCONTENTHTML"># </h2>
+                </div>
+            </div>
+            <div id="foulModBtnsALLHTML" class="foulModBtnsALLHTML"> 
+                <div id="homeFoulModButtonsALLHTML" class="homeFoulModButtonsALLHTML">
+                    
+                    <div class="hFoulModBtnsHMTL">
+                        <button id="hFoulModPlus1" onclick="hFoulModPlus1Func()">+1</button>
+                        <button id="hFoulModMinus1" onclick="hFoulModMinus1Func()">-1</button>
+                    </div>
+                    
+                    <div class="hFoulPlayerEntryHMTL">
+                        <body class="hPlayerEntryALLHMTL">PLAYER:</body>
+                        <input id="hFoulPlayerInputHTML" class="hPlayerEntryALLHMTL" size="1"></input>
+                        <button id="hFoulPlayerEnterBtnHTML" onclick="hFoulPlayerEnterBtnFunc()" class="hPlayerEntryALLHMTL">ENTER</button>
+                    </div>
+                    
+                </div>
+                <div id="guestFoulModButtonsALLHTML" class="guestFoulModButtonsALLHTML">
+                    
+                    <div class="gFoulModBtnsHMTL">
+                        <button id="gFoulModPlus1" onclick="gFoulModPlus1Func()">+1</button>
+                        <button id="gFoulModMinus1" onclick="gFoulModMinus1Func()">-1</button>
+                    </div>
+                    
+                    <div class="gFoulPlayerEntryHMTL">
+                        <body>PLAYER:</body>
+                        <input id="gFoulPlayerInputHTML" size="1"></input>
+                        <button id="gFoulPlayerEnterBtnHTML" onclick="gFoulPlayerEnterBtnFunc()">ENTER</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    <div class="otherFuncALLHTML">
+            <button class="resetBtn" onclick="resetALLFunc()">RESET ALL</button>
+    </div>   
+        <script src="index.js"></script>
+    </body>
+</html>
